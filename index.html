@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="input-wrapper">
+
+        <label for="all">All</label>
+        <input type="radio" checked="true" name="type" id="all">
+
+        <label for="search">Search</label>
+        <input type="radio" name="type" id="search">
+    </div>
+
+    <h2 id=""></h2>
+    <div class="row">
+    </div>
+
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="submit">Search</button>
+    </div>
+    <div class="result hidden">
+        <img src="" id="img" alt=""/>
+        <h2 id="name"></h2>
+        <p id="category"></p>
+        <p id="instruction"></p>
+        <ul id="ingredients"></ul>
+    </div>
+
+
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
