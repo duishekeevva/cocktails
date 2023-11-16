@@ -9,7 +9,75 @@
     margin: 0 auto;
 }
 
-.row {
+section {
+    padding: 35px;
+}
+
+.logo {
+    width: 80px;
+}
+
+
+.header {
+    background-color: black;
+    padding: 15px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-wrapper button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px 8px;
+}
+
+.head {
+    background: url("./assets/bar4.jpg")center/cover no-repeat;
+}
+
+.menu {
+    background-color: black;
+}
+
+.head-container {
+    padding: 70px 0
+}
+
+.about-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about-bar h2 {
+    color: white;
+    font-size: 44px;
+}
+
+.about-bar p {
+    color: white;
+    font-size: 18px;
+}
+
+.about-wrapper p {
+    color: white;
+    font-size: 20px;
+}
+.img-box, .row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -19,29 +87,33 @@
     padding: 15px;
 }
 
+.col-6 {
+    width: 50%;
+    padding: 15px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
     height: 100%;
-    background-color: transparent;
+    background-color: white;
     padding: 15px;
     border-radius: 5px;
     border: 2px solid gray;
 }
 .result {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
     border: 1px solid #0d0da2;
     border-radius: 8px;
-    flex-direction: column;
     gap: 10px;
-    background-color: aliceblue;
+    background-color: white;
 }
 .result img {
-    width: 250px;
+    width: 100%;
 }
 
 .search-wrapper input {
@@ -52,6 +124,28 @@
 
 button {
     padding: 5px 15px;
+}
+
+#ingredients {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    border-radius: 8px;
+    border:0.5px solid #b2b2b2;
+    padding: 5px 12px;
+}
+
+#submit {
+    border-radius: 8px;
+    border:0.5px solid #b2b2b2;
+    padding: 6px 18px;
+    font-weight: bolder;
+}
+
+#submit:hover {
+    background-color: gray;
 }
 
 .hidden {

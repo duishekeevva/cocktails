@@ -9,34 +9,93 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="container">
-    <div class="input-wrapper">
-
-        <label for="all">All</label>
-        <input type="radio" checked="true" name="type" id="all">
-
-        <label for="search">Search</label>
-        <input type="radio" name="type" id="search">
+<header class="header">
+    <div class="container header-wrapper">
+        <img class="logo" src="./assets/logo%20(1).png" alt="">
+        <nav class="nav">
+            <a href="#home">
+                Home
+            </a>
+            <a href="#Recipes">
+                Recipes
+            </a>
+            <a href="#article">
+                Article
+            </a>
+            <a href="#contact">
+                Contact
+            </a>
+            <a href="#Purchase">
+                Purchase
+            </a>
+        </nav>
+        <button>RESERVATION</button>
     </div>
+</header>
+<main>
+    <section class="head">
+        <div class="container head-container">
+            <div class="row" style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-6">
+                    <div class="about-bar">
+                        <h2>BAR PORTAL</h2>
+                        <p><b>Адрес:</b> пр. Римского-Корсакова, 5-7, Санкт-Петербург</p>
+                        <p><b>Cтол:</b> +7 (921) 433-97-92</p>
+                        <p><b>Время работы:</b> ВС-СР 19:00–04:00, ЧТ-СБ 19:00-05:00</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="about-wrapper">
+                        <p>
+                            Атмосферный коктейль-бар в стиле Америки 30-х в самом центре Петербурга. Оригинальность заведению
+                            придают выдержанные коктейли, которые готовятся по уникальной технологии. Для каждого напитка
+                            используют не больше четырёх компонентов; авторские миксы готовят при помощи ультразвука, а
+                            ингредиенты для выдержанных коктейлей помещают на несколько недель в дубовые бочки, кожаные бурдюки,
+                            бетон или стеклянные бутылки.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <div class="input-wrapper">
 
-    <h2 id=""></h2>
-    <div class="row">
-    </div>
+                <label style="color: white" for="all">Все</label>
+                <input type="radio" checked name="type" id="all">
 
-    <div class="search-wrapper">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <button id="submit">Search</button>
-    </div>
-    <div class="result hidden">
-        <img src="" id="img" alt=""/>
-        <h2 id="name"></h2>
-        <p id="category"></p>
-        <p id="instruction"></p>
-        <ul id="ingredients"></ul>
-    </div>
+                <label style="color: white" for="search">Поиск</label>
+                <input type="radio"  name="type" id="search">
+            </div>
+            <div class="img-box">
+            </div>
+            <div class="search-wrapper hidden">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="submit">Search</button>
+            </div>
+            <div class="result hidden">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <img src="" id="img" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-6" style="display: flex;flex-direction: column; justify-content: space-between; gap:15px;">
+                        <h2 id="name"></h2>
+                        <p id="category"></p>
+                        <h3>Instruction</h3>
+                        <p id="instruction"></p>
+                        <div class="row" id="ingredients">
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
+</main>
 
-</div>
 <script src="./script.js"></script>
 </body>
 </html>
